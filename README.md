@@ -3,21 +3,34 @@
 
 ## Main()
 ```
+Establish variables:
+ifstream inFile("data.csv");
+string currentLine
+string sCounter
+string word
 
-open file
-establish variables (file pointer, stringstreams, num_strings, num_ints)
-while loop (getline(inFile, currentLine)) {
-clear stringstream
-clear converter
-load variables into ss stream
-read counter as string. specify a comma delimiter
-getline(ss, sCounter, ',')
+int num1
+int num2
+int counter
 
+stringstream ss
+stringstream converter
 
-send contents of converter back to integer
-converter >> counter; // convert string to int
-add up the two integers
-print the text that number of times
-repeat for each line in the text file
-}
+While Loop:
+clear stringstreams
+clear converters
+put current line into ss
+get first number
+clear converter before next use
+get second number
+add the two numbers
+get word
+
+For Loop:
+for each value in counter, print word followed by a space
+
+Print a New Line
+
+Close file, return 0
+
 ```
